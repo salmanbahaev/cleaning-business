@@ -17,14 +17,102 @@
     <div class="cl-allpack">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-xl-6">
+          <div class="col-12 col-lg-6">
             <p class="cl-allpack__info">Готовое решение</p>
+            <p class="cl-allpack__title">Пакет "Всё включено"</p>
+            <p class="cl-allpack__subtitle">Поможем открыть клининговую компанию с нуля <br> за 3 месяца до первых клиентов.</p>
+            <div class="cl-allpack__stat d-flex">
+              <p class="cl-allpack__stat-year"> <span class="cl-blue-color">C 2016 <br></span>года в клининге</p>
+              <p class="cl-allpack__stat-sum"> <span class="cl-blue-color">70+ <br></span>открытых компаний</p>
+            </div>
+            <div class="cl-allpack__price">
+              <p class="cl-allpack__price-off">От 6 373р. в месяц</p>
+              <p class="cl-allpack__price-on">От <span class="cl-blue-color">4 780р.</span> в месяц</p>
+              <p class="cl-allpack__price-text">При рассрочке до 36 месяцев</p>
+            </div>
+            <p class="cl-allpack__group-title">Простраиваем небходимые отделы компании</p>
+            <div class="cl-allpack__group d-flex justify-content-between">
+              <div class="cl-allpack__group-left">
+                <ul>
+                  <li>Отдел клининга</li>
+                  <li>Отдел маркетинна</li>
+                </ul>
+              </div>
+              <div class="cl-allpack__group-right">
+                <ul>
+                  <li>Отдел продаж</li>
+                  <li>Отдел бухгалтерии</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="cl-form">
+              <form action="#" id="form" class="cl-form__body">
+                <p class="cl-form__title">Оставьте заявку, чтобы получить полный список услуг по пакету "Всё включено"</p>
+                <div class="cl-form__block">
+                  <div class="cl-form__item cl-form__item-input">
+                    <input id="formName" type="text" name="name" class="cl-form__input">
+                  </div>
+                  <div class="cl-form__item cl-form__item-input">
+                    <input id="formEmail" type="text" name="email" class="cl-form__input">
+                  </div>
+                  <div class="cl-form__item cl-form__item-input">
+                    <div class="__select" data-state="">
+                      <div class="__select__title"></div>
+                      <div class="__select__content">
+                      <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                      <label for="singleSelect0" tabindex="0" class="__select__label" data-value="Option 0"></label>
+                      <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect1" tabindex="0" class="__select__label" data-value="Option 1"></label>
+                      <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+                      <label for="singleSelect2" tabindex="0" class="__select__label" data-value="Option 2 (disabled)"></label>
+                      <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect3" tabindex="0" class="__select__label" data-value="Option 3"></label>
+                      <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                      <label for="singleSelect4" tabindex="0" class="__select__label" data-value="Option 4"></label>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="cl-form__item">
+                    <div class="cl-checkbox">
+                      <input id="formLegal" type="checkbox" name="legal" class="cl-checkbox__input">
+                      <label for="formLegal" class="cl-checkbox__label">Я юридическое лицо</label>
+                    </div>
+                  </div>
+                  <button type="submit" class="cl-form__button">Хочу учиться</button>
+                </div>
+                <p class="cl-form__pact">Отправляя заявку, вы принимаете условия договора-оферты и даете согласие на обработку своих персональных данных в соответствии с политикой конфиденциальности.</p>
+
+
+
+
+
+
+
+
+                <div class="__select" data-state="">
+                    <div class="__select__title"></div>
+                    <div class="__select__content">
+                    <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                    <label for="singleSelect0" tabindex="0" class="__select__label" data-value="Option 0"></label>
+                    <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect1" tabindex="0" class="__select__label" data-value="Option 1"></label>
+                    <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+                    <label for="singleSelect2" tabindex="0" class="__select__label" data-value="Option 2 (disabled)"></label>
+                    <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect3" tabindex="0" class="__select__label" data-value="Option 3"></label>
+                    <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect4" tabindex="0" class="__select__label" data-value="Option 4"></label>
+                  </div>
+                </div>
+
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
 
   </div>
 
@@ -33,9 +121,11 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <script src="js/select.js"></script>
   <!-- <script src="js/jquery.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script> -->
+
 </body>
 
 </html>

@@ -1,3 +1,431 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+p {
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: 'Noir Pro';
+  src: local("Noir Pro Regular"), local("Noir-Pro-Regular"), url("../fonts/NoirPro-Regular.woff2") format("woff2"), url("../fonts/NoirPro-Regular.woff") format("woff"), url("../fonts/NoirPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noir Pro';
+  src: local("Noir Pro Medium"), local("Noir-Pro-Medium"), url("../fonts/NoirPro-Medium.woff2") format("woff2"), url("../fonts/NoirPro-Medium.woff") format("woff"), url("../fonts/NoirPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noir Pro';
+  src: local("Noir Pro Light"), local("Noir-Pro-Light"), url("../fonts/NoirPro-Light.woff2") format("woff2"), url("../fonts/NoirPro-Light.woff") format("woff"), url("../fonts/NoirPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noir Pro';
+  src: local("Noir Pro Bold"), local("Noir-Pro-Bold"), url("../fonts/NoirPro-Bold.woff2") format("woff2"), url("../fonts/NoirPro-Bold.woff") format("woff"), url("../fonts/NoirPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cl-blue-color {
+  color: #009AF2;
+}
+
 .cl-wrapper {
+  font-family: 'Noir Pro', sans-serif;
   padding-top: 100px;
+}
+
+.cl-allpack * {
+  line-height: 135%;
+}
+
+.cl-allpack__info {
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+.cl-allpack__title {
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.cl-allpack__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+
+.cl-allpack__stat {
+  padding-bottom: 50px;
+}
+
+.cl-allpack__stat-year {
+  padding-right: 70px;
+  font-size: 16px;
+}
+
+.cl-allpack__stat-year span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cl-allpack__stat-sum {
+  font-size: 16px;
+}
+
+.cl-allpack__stat-sum span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cl-allpack__price {
+  padding-left: 8px;
+  padding-bottom: 50px;
+}
+
+.cl-allpack__price-off {
+  font-size: 20px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  padding-bottom: 10px;
+}
+
+.cl-allpack__price-on {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.cl-allpack__price-text {
+  font-size: 14px;
+}
+
+.cl-allpack__group-title {
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cl-allpack__group {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.cl-allpack__group-left li, .cl-allpack__group-right li {
+  margin-left: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.cl-allpack__group-left li:first-child, .cl-allpack__group-right li:first-child {
+  padding-bottom: 20px;
+}
+
+.cl-allpack__group-left li::before, .cl-allpack__group-right li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  display: inline-block;
+}
+
+.cl-form {
+  max-width: 483px;
+  padding: 40px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.cl-form__title {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cl-form__item {
+  margin: 0 0 40px 0;
+}
+
+.cl-form__item-input {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.cl-form__block {
+  padding: 0 22px 0;
+  font-size: 16px;
+}
+
+.cl-form__input {
+  width: 100%;
+}
+
+.cl-form__button {
+  margin-bottom: 40px;
+  background: #009AF2;
+  border-radius: 10px;
+  padding: 15px 72px;
+  color: #FFFFFF;
+}
+
+.__select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 230px;
+  height: 40px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.__select[data-state="active"] .__select__title::before {
+  -webkit-transform: translate(-3px, -50%) rotate(-45deg);
+          transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.__select[data-state="active"] .__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(45deg);
+          transform: translate(3px, -50%) rotate(45deg);
+}
+
+.__select[data-state="active"] .__select__content {
+  border-width: 1px;
+  border-color: #c7ccd1;
+}
+
+.__select[data-state="active"] .__select__label {
+  max-height: 40px;
+  border-width: 1px;
+}
+
+.__select[data-state="active"] .__select__label::before {
+  opacity: 1;
+}
+
+.__select__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: solid 1px #c7ccd1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.__select__title::before, .__select__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #333333;
+  -webkit-transform: translate(-3px, -50%) rotate(45deg);
+          transform: translate(-3px, -50%) rotate(45deg);
+}
+
+.__select__title::after {
+  -webkit-transform: translate(3px, -50%) rotate(-45deg);
+          transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.__select__title:hover {
+  border-color: #D8093A;
+}
+
+.__select__title:hover::before, .__select__title:hover::after {
+  background-color: #D8093A;
+}
+
+.__select__content {
+  position: absolute;
+  top: 40px;
+  left: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% - 6px);
+  background-color: #ffffff;
+  border: 1px solid rgba(199, 204, 209, 0);
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 1;
+}
+
+.__select__input {
+  display: none;
+  pointer-events: none;
+}
+
+.__select__input:checked + label {
+  background-color: #dedede;
+}
+
+.__select__input:checked + label::after {
+  content: attr(data-value);
+}
+
+.__select__input:disabled + label {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.__select__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  max-height: 0;
+  padding: 0 16px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.__select__label + input + .__select__label {
+  border-top: 0 solid #C7CCD160;
+}
+
+.__select__label:hover {
+  background-color: #D8093A !important;
+  color: #ffffff;
+}
+
+.__select__label::before {
+  content: attr(data-value);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+}
+
+.__select__label::after {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #333333;
+  z-index: -1;
 }
