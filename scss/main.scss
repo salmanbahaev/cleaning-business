@@ -172,7 +172,7 @@ $blue: #009AF2;
   }
 
   &__pact {
-    font-size: 14px;
+    font-size: 13.5px;
     text-align: center;
   }
 }
@@ -180,13 +180,46 @@ $blue: #009AF2;
   display: flex;
   align-items: center;
 
-  &__input {}
+  &__input {
+    display: none;
+  }
+  &__input:checked + &__label::after {
+    transform: scale(1);
+  }
 
   &__label {
-    margin-bottom: 0;
-    margin-left: 10px;
+    margin: 0 10px 0 0;
+    width: 100%;
     font-size: 14px;
     font-weight: 300;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      flex: 0 0 20px;
+      align-self: flex-start;
+      margin-right: 10px;
+      height: 20px;
+      background-color: #fff;
+      border: 1px solid #444;
+      border-radius: 5px;
+    }
+
+    &::after {
+      transition: transform .3s ease 0s;
+      content: "";
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      background-color: #888;
+      border-radius: 4px;
+      transform: scale(0);
+    }
   }
 }
 
