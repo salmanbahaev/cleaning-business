@@ -228,6 +228,29 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20px;
 }
 
+.cl-form__body {
+  position: relative;
+}
+
+.cl-form__body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/loading.gif") center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+.cl-form__body._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .cl-form__title {
   font-size: 20px;
   font-weight: 300;
@@ -245,6 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cl-form__item-input-tarif {
   margin-bottom: 40px;
+  border-bottom: 1px solid transparent;
 }
 
 .cl-form__block {
@@ -256,6 +280,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 6px 10px;
   font-weight: 300;
+  border-bottom: 1px solid transparent;
+}
+
+.cl-form__input._error {
+  border-bottom: 1px solid red;
 }
 
 .cl-form__input::-webkit-input-placeholder {
@@ -429,6 +458,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .__select__title:hover::before, .__select__title:hover::after {
   background-color: #333333;
+}
+
+.__select__title._error {
+  border-bottom: 1px solid red;
 }
 
 .__select__content {
