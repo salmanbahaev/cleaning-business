@@ -10,16 +10,36 @@ $blue: #009AF2;
   color: $blue;
 }
 
-
-// Стили:
+// styles:
 .cl-wrapper {
-  font-family: 'Noir Pro', sans-serif;
-  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-
 .cl-allpack {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 56px;
+  background: url('../img/bg-allpack.svg') 100% 100%/49% no-repeat;
+  // background: url('../img/bg-allpack.svg') 100% 100%/contain no-repeat;
+
+  &__clean {
+    position: absolute;
+    width: 309px;
+    height: 309px;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+
+    transform: translate(-53%, 2%);
+    z-index: 500;
+  }
+  &__clean-img {
+    width: 100%;
+    height: 100%;
+  }
+
   * {
+    font-family: 'Noir Pro', sans-serif;
     line-height: 135%;
   }
 
@@ -120,7 +140,6 @@ $blue: #009AF2;
     }
   }
 }
-
 
 .cl-form {
   max-width: 483px;
@@ -250,11 +269,6 @@ $blue: #009AF2;
 }
 
 
-
-
-
-
-
 //====== select =======
 
 .__select {
@@ -295,7 +309,6 @@ $blue: #009AF2;
     }
   }
 }
-
 .__select__title {
   display: flex;
   align-items: center;
@@ -337,7 +350,6 @@ $blue: #009AF2;
     border-bottom: 1px solid red;
   }
 }
-
 .__select__content {
   position: absolute;
   top: 40px;
@@ -420,5 +432,98 @@ $blue: #009AF2;
     color: #333333;
     
     z-index: -1;
+  }
+}
+// ==== / select =======
+
+// ====== STEPS ========
+.cl-steps {
+  margin-top: 106px;
+  .container {
+    p {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
+
+
+.cl-line {
+  margin-top: 90px;
+  border: 1px solid #E5E5E5;
+}
+.cl-line {
+
+  .container {
+  }
+
+  &__relative {
+    position: relative;
+  }
+
+  &__absolute-1 {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__absolute-2 {
+    position: absolute;
+  }
+}
+
+
+
+.cl-short {
+  margin-top: 30px;
+
+  .container {
+  }
+  .row {
+  }
+  .col-4 {
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: -36px;
+      left: 50%;
+      border-radius: 50%;
+      background: #009AF2;
+    }
+  }
+
+  &__step-1 {}
+  &__step-2 {}
+  &__step-3 {
+    .cl-short__step-title {
+      max-width: 200px;
+    }
+  }
+
+  &__step-title {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__step-button {
+    background: #009AF2;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 9px 33px;
+    margin-top: 18px;
   }
 }

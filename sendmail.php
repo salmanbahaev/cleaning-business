@@ -18,10 +18,16 @@
 	$mail->Subject = 'Привет! Присылаю тебе заявочку!';
 
 	//Тариф
-	$hand = "";
-	if($_POST['singleSelect'] == "left"){
-		$hand = "Левая";
-	}
+	// $hand = "";
+	// if($_POST['singleSelect'] == "Тариф 1"){
+	// 	$hand = "Тариф 1";
+	// }
+	// if($_POST['singleSelect'] == "Тариф 2"){
+	// 	$hand = "Тариф 2";
+	// }
+	// if($_POST['singleSelect'] == "Тариф 3"){
+	// 	$hand = "Тариф 3";
+	// }
 
 	//Тело письма
 	$body = '<h1>Встречайте супер письмо!</h1>';
@@ -32,11 +38,11 @@
 	if(trim(!empty($_POST['email']))){
 		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 	}
-	if(trim(!empty($_POST['singleSelect']))){
-		$body.='<p><strong>Тариф:</strong> '.$hand.'</p>';
-	}
+	// if(trim(!empty($_POST['singleSelect']))){
+	// 	$body.='<p><strong>Тариф:</strong> '.$hand.'</p>';
+	// }
 
-	// $mail->Body = $body;
+	$mail->Body = $body;
 
 	//Отправляем
 	if (!$mail->send()) {
