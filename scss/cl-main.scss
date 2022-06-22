@@ -448,41 +448,31 @@ $blue: #009AF2;
   }
 }
 
-
 .cl-line {
   margin-top: 90px;
   border: 1px solid #E5E5E5;
-}
-.cl-line {
-
-  .container {
-  }
 
   &__relative {
     position: relative;
+    width: 100%;
   }
 
   &__absolute-1 {
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
+    left: 33%;
+    
   }
 
   &__absolute-2 {
     position: absolute;
+    bottom: -8px;
+    right: 33%;
   }
 }
 
-
-
 .cl-short {
   margin-top: 30px;
-
-  .container {
-  }
-  .row {
-  }
-  .col-4 {
-  }
 
   &__step {
     display: flex;
@@ -498,7 +488,7 @@ $blue: #009AF2;
       height: 10px;
       position: absolute;
       top: -36px;
-      left: 50%;
+      left: 49%;
       border-radius: 50%;
       background: #009AF2;
     }
@@ -526,4 +516,28 @@ $blue: #009AF2;
     padding: 9px 33px;
     margin-top: 18px;
   }
+}
+
+
+.cl-step-1 {
+
+  &__brand-name {
+    margin-top: 100px;
+
+  p {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  }
+
+  &__video-title {}
+
+  &__video {}
+
+  &__video-play {}
+
+  &__partners-title {}
+
+  &__partners {}
 }

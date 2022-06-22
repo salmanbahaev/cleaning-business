@@ -595,15 +595,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .cl-line__relative {
   position: relative;
+  width: 100%;
 }
 
 .cl-line__absolute-1 {
   position: absolute;
-  bottom: 0;
+  bottom: -8px;
+  left: 33%;
 }
 
 .cl-line__absolute-2 {
   position: absolute;
+  bottom: -8px;
+  right: 33%;
 }
 
 .cl-short {
@@ -634,7 +638,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 10px;
   position: absolute;
   top: -36px;
-  left: 50%;
+  left: 49%;
   border-radius: 50%;
   background: #009AF2;
 }
@@ -656,4 +660,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   padding: 9px 33px;
   margin-top: 18px;
+}
+
+.cl-step-1__brand-name {
+  margin-top: 100px;
+}
+
+.cl-step-1__brand-name p {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
 }
