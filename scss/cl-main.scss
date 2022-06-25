@@ -10,6 +10,20 @@ $blue: #009AF2;
   color: $blue;
 }
 
+.cl-button-mini {
+  background: #009AF2;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 9px 33px;
+  margin-top: 18px;
+}
+
+.title-text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
 // styles:
 .cl-wrapper {
   padding-bottom: 100px;
@@ -523,21 +537,200 @@ $blue: #009AF2;
 
   &__brand-name {
     margin-top: 100px;
-
-  p {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
+    
+    p {
+      text-align: center;
+      padding-bottom: 40px;
+    }
   }
+
+  &__video-title {
+    padding-bottom: 40px;
   }
 
-  &__video-title {}
+  &__video {
+    border-radius: 20px;
+    overflow: hidden;
 
-  &__video {}
+    .video_wrapper {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      background-color: #000;
+    }
+    .video_wrapper_full {
+      padding-top: 64.1%;
+    }
+    
+    
+    .videoIframe {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+    }
+    
+    .videoPoster {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+     background-image:url('/img/brand-prev.png');
+      background-size: 100%;
+      border: none;
+      text-indent: -999em;
+      overflow: hidden;
+      opacity: 1;
+      -webkit-transition: opacity 800ms, height 0s;
+      -moz-transition: opacity 800ms, height 0s;
+      transition: opacity 800ms, height 0s;
+      -webkit-transition-delay: 0s, 0s;
+      -moz-transition-delay: 0s, 0s;
+      transition-delay: 0s, 0s;
+    }
+    .videoPoster:hover {
+      cursor: pointer;
+    }
+    .videoPoster:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 15%;
+      height: 22%;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      -webkit-transition: border-color 300ms;
+      -moz-transition: border-color 300ms;
+      transition: border-color 300ms;
+      transition: all 0.5s ease;
+    }
+    .videoPoster:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 6%;
+        height: 14%;
+        background: url('/img/play-triang.svg') 50% 50% no-repeat;
+        transition: all 0.5s ease;
+        background-size: contain;
+    }
+    .videoPoster:hover:before,  .videoPoster:focus:before {
+        border-color: #0380C8;
+        -webkit-box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.4);
+    -moz-box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.4);
+    box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.4);
+      }
+      .videoPoster:hover:after, .videoPoster:focus:after {
+        border-left-color: #0380C8;
+    }
+    .videoWrapperActive .videoPoster {
+      opacity: 0;
+      height: 0;
+      -webkit-transition-delay: 0s, 800ms;
+      -moz-transition-delay: 0s, 800ms;
+      transition-delay: 0s, 800ms;
+    }
+  }
 
   &__video-play {}
 
-  &__partners-title {}
+  &__partners-title {
+    text-align: right;
+    padding-bottom: 40px;
+  }
 
-  &__partners {}
+  &__partners {
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+    }
+  }
 }
+
+
+
+// =========== STEP 2
+
+.cl-step-2 {
+  &__brand-type {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  &__clining {
+    border: 4px solid #009AF2;
+    border-radius: 20px;
+    margin-top: 60px;
+  }
+
+  &__clining-title {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__bottom-title {}
+
+  &__bottom-img-l {}
+
+  &__bottom-text-l {}
+
+  &__bottom-img-r {}
+
+  &__bottom-text-r {}
+}
+.container {
+}
+.row {
+}
+.col-12 {
+}
+.title-text {
+}
+.col-6 {
+}
+.cl-card {
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    margin-top: 45px;
+  }
+
+  &__list {
+    align-self: flex-start;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+}
+.cl-button-mini {
+}
+
+
+
