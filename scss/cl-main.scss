@@ -15,13 +15,19 @@ $blue: #009AF2;
   border-radius: 10px;
   color: #FFFFFF;
   padding: 9px 33px;
-  margin-top: 18px;
 }
 
 .title-text {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+}
+
+// container
+@media (min-width: 1200px) {
+  .container{
+      max-width: 1200px;
+  }
 }
 
 // styles:
@@ -532,7 +538,7 @@ $blue: #009AF2;
   }
 }
 
-
+// =========== STEP 1
 .cl-step-1 {
 
   &__brand-name {
@@ -660,77 +666,224 @@ $blue: #009AF2;
       width: 100%;
     }
   }
-}
-
-
+} // =========== / STEP 1
 
 // =========== STEP 2
 
 .cl-step-2 {
+
   &__brand-type {
     margin-top: 100px;
     text-align: center;
   }
 
-  &__clining {
+  &__clining,
+  &__sale,
+  &__accounting,
+  &__marketing {
     border: 4px solid #009AF2;
     border-radius: 20px;
     margin-top: 60px;
+    padding: 40px 15px;
+
   }
 
-  &__clining-title {
+  .col-6.cl-step-2__clining-block,
+  .col-6.cl-step-2__sale-block {
+    padding-right: 30px;
+    padding-left: 0;
+  }
+  .col-6.cl-step-2__marketing-block,
+  .col-6.cl-step-2__accounting-block {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  &__clining-title,
+  &__sale-title,
+  &__accounting-title,
+  &__marketing-title {
     text-align: center;
-    margin-top: 40px;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 25px;
   }
 
-  &__bottom-title {}
+  &__bottom-title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__times {
+    margin-top: 20px;
+  }
+
+  &__times-content {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+  }
 
   &__bottom-img-l {}
 
-  &__bottom-text-l {}
+  &__bottom-text-l,
+  &__bottom-text-r {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 200%;
+    margin-left: 20px;
+  }
 
   &__bottom-img-r {}
 
   &__bottom-text-r {}
-}
-.container {
-}
-.row {
-}
-.col-12 {
-}
-.title-text {
-}
-.col-6 {
-}
-.cl-card {
 
-  background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .col-6.cl-card-l {
+    padding-right: 5px;
+  }
+  .col-6.cl-card-r {
+    padding-left: 5px;
+  }
+  .cl-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 0;
+    min-height: 350px;
+  
+    &__img {}
+  
+    &__list {
+      // align-self: flex-start;
+      margin-top: 40px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 300;
+  
+      ul {
+        margin-bottom: 0;
+        font-weight: 400;
+        padding: 0 18px;
+  
+        li:not(:last-child) {
+          margin-bottom: 4px;
+        }
 
-  &__img {
-    margin-top: 45px;
+        li {
+          margin-left: 11px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: start;
+        }
+
+        li:before {
+          content: "";
+          width: 3px;
+          height: 3px;
+          margin-right: 10px;
+          border-radius: 50%;
+          background-color: #000;
+          display: inline-block;
+          margin-top: 9px;
+        }
+      }
+    }
+  
+    &__button {
+      margin-top: auto;
+      display: flex;
+    }
+  }
+} // =========== / STEP 2
+
+// =========== STEP 3
+.cl-step-3 {
+
+  &__title {
+    margin-top: 100px;
+
+    p {
+      text-align: center;
+    }
   }
 
-  &__list {
-    align-self: flex-start;
-    margin-top: 40px;
+  .row.cl-step-3__card-wrapper {
+    margin-left: -30px;
+    margin-right: -30px;
+    display: flex;
+    align-items: stretch;
+
+    > div {
+      margin-top: 40px;
+    }
+
+  }
+
+  &__card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 72px 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__card-1 {
+    background: url("/img/course-1.png") center/cover no-repeat;
+  }
+  &__card-2 {
+    background: url("/img/course-2.png") center/cover no-repeat;
+  }
+  &__card-3 {
+    background: url("/img/course-3.png") center/cover no-repeat;
+  }
+  &__card-4 {
+    background: url("/img/course-4.png") center/cover no-repeat;
+  }
+  &__card-5 {
+    background: url("/img/course-5.png") center/cover no-repeat;
+  }
+
+  &__card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 2;
+  }
+
+  
+
+  &__card-title {
+    position: relative;
+    z-index: 5;
     font-size: 16px;
     line-height: 19px;
-    font-weight: 300;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
   }
 
   &__button {
-    margin-top: 40px;
-  }
+    position: relative;
+    z-index: 5;
+    margin-top: auto;
+  } 
 }
-.cl-button-mini {
-}
 
 
 
+
+// =========== / STEP 3
