@@ -11,11 +11,24 @@ $blue: #009AF2;
 }
 
 .cl-button-mini {
+  display: block;
   background: #009AF2;
   border-radius: 10px;
   color: #FFFFFF;
   padding: 9px 33px;
+  transition: all .2s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background: #007bc2;
+  }
 }
+
 
 .title-text {
   font-size: 24px;
@@ -234,6 +247,19 @@ $blue: #009AF2;
     border-radius: 10px;
     padding: 15px 72px;
     color: #FFFFFF;
+    transition: all .2s ease;
+    position: relative;
+    z-index: 1000;
+
+    &:hover {
+      transform: scale(1.03);
+      color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      background: #007bc2;
+    }
   }
 
   &__pact {
@@ -261,6 +287,7 @@ $blue: #009AF2;
     align-items: center;
     position: relative;
     cursor: pointer;
+    z-index: 1000;
 
     &::before {
       content: "";
@@ -881,9 +908,60 @@ $blue: #009AF2;
     z-index: 5;
     margin-top: auto;
   } 
+} 
+// =========== / STEP 3
+
+// =========== GET
+.cl-get {
+  .row.cl-get__cards {
+    margin-left: -30px;
+    margin-right: -30px;
+    display: flex;
+    align-items: stretch;
+
+    > div {
+      margin-top: 40px;
+    }
+  }
+
+  .container {
+  }
+  .row {
+  }
+
+  &__title {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  &__cards {}
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    height: 100%;
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 16.5px;
+      font-weight: 500;
+    }
+  }
+
+  &__img {}
+
+  &__button {
+    margin-top: auto;
+  }
 }
 
 
-
-
-// =========== / STEP 3
