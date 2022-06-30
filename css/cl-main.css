@@ -78,31 +78,91 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 @font-face {
-  font-family: 'Noir Pro';
-  src: local("Noir Pro Regular"), local("Noir-Pro-Regular"), url("../fonts/NoirPro-Regular.woff2") format("woff2"), url("../fonts/NoirPro-Regular.woff") format("woff"), url("../fonts/NoirPro-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-Bold.eot");
+  src: local("Noir Pro Bold"), local("NoirPro-Bold"), url("../fonts/NoirPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-Bold.woff2") format("woff2"), url("../fonts/NoirPro-Bold.woff") format("woff"), url("../fonts/NoirPro-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Noir Pro';
-  src: local("Noir Pro Medium"), local("Noir-Pro-Medium"), url("../fonts/NoirPro-Medium.woff2") format("woff2"), url("../fonts/NoirPro-Medium.woff") format("woff"), url("../fonts/NoirPro-Medium.ttf") format("truetype");
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-BoldItalic.eot");
+  src: local("Noir Pro Bold Italic"), local("NoirPro-BoldItalic"), url("../fonts/NoirPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-BoldItalic.woff2") format("woff2"), url("../fonts/NoirPro-BoldItalic.woff") format("woff"), url("../fonts/NoirPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-SemiBoldItalic.eot");
+  src: local("Noir Pro Semi Bold Italic"), local("NoirPro-SemiBoldItalic"), url("../fonts/NoirPro-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-SemiBoldItalic.woff2") format("woff2"), url("../fonts/NoirPro-SemiBoldItalic.woff") format("woff"), url("../fonts/NoirPro-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-LightItalic.eot");
+  src: local("Noir Pro Light Italic"), local("NoirPro-LightItalic"), url("../fonts/NoirPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-LightItalic.woff2") format("woff2"), url("../fonts/NoirPro-LightItalic.woff") format("woff"), url("../fonts/NoirPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-Heavy.eot");
+  src: local("Noir Pro Heavy"), local("NoirPro-Heavy"), url("../fonts/NoirPro-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-Heavy.woff2") format("woff2"), url("../fonts/NoirPro-Heavy.woff") format("woff"), url("../fonts/NoirPro-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-Italic.eot");
+  src: local("Noir Pro Italic"), local("NoirPro-Italic"), url("../fonts/NoirPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-Italic.woff2") format("woff2"), url("../fonts/NoirPro-Italic.woff") format("woff"), url("../fonts/NoirPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-Medium.eot");
+  src: local("Noir Pro Medium"), local("NoirPro-Medium"), url("../fonts/NoirPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-Medium.woff2") format("woff2"), url("../fonts/NoirPro-Medium.woff") format("woff"), url("../fonts/NoirPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Noir Pro';
-  src: local("Noir Pro Light"), local("Noir-Pro-Light"), url("../fonts/NoirPro-Light.woff2") format("woff2"), url("../fonts/NoirPro-Light.woff") format("woff"), url("../fonts/NoirPro-Light.ttf") format("truetype");
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-Regular.eot");
+  src: local("Noir Pro"), local("NoirPro-Regular"), url("../fonts/NoirPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-Regular.woff2") format("woff2"), url("../fonts/NoirPro-Regular.woff") format("woff"), url("../fonts/NoirPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-Light.eot");
+  src: local("Noir Pro Light"), local("NoirPro-Light"), url("../fonts/NoirPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-Light.woff2") format("woff2"), url("../fonts/NoirPro-Light.woff") format("woff"), url("../fonts/NoirPro-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Noir Pro';
-  src: local("Noir Pro Bold"), local("Noir-Pro-Bold"), url("../fonts/NoirPro-Bold.woff2") format("woff2"), url("../fonts/NoirPro-Bold.woff") format("woff"), url("../fonts/NoirPro-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-HeavyItalic.eot");
+  src: local("Noir Pro Heavy Italic"), local("NoirPro-HeavyItalic"), url("../fonts/NoirPro-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-HeavyItalic.woff2") format("woff2"), url("../fonts/NoirPro-HeavyItalic.woff") format("woff"), url("../fonts/NoirPro-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NoirPro';
+  src: url("../fonts/NoirPro-MediumItalic.eot");
+  src: local("Noir Pro Medium Italic"), local("NoirPro-MediumItalic"), url("../fonts/NoirPro-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NoirPro-MediumItalic.woff2") format("woff2"), url("../fonts/NoirPro-MediumItalic.woff") format("woff"), url("../fonts/NoirPro-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
 }
 
 .cl-blue-color {
@@ -134,17 +194,20 @@ h1, h2, h3, h4, h5, h6 {
 .title-text {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .container {
     max-width: 1200px;
   }
 }
 
 .cl-wrapper {
+  font-family: 'NoirPro', sans-serif;
   padding-bottom: 100px;
+  line-height: 135%;
+  overflow: hidden;
 }
 
 .cl-allpack {
@@ -169,11 +232,6 @@ h1, h2, h3, h4, h5, h6 {
 .cl-allpack__clean-img {
   width: 100%;
   height: 100%;
-}
-
-.cl-allpack * {
-  font-family: 'Noir Pro', sans-serif;
-  line-height: 135%;
 }
 
 .cl-allpack__info {
@@ -324,7 +382,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.cl-form__item-input-tarif {
+.cl-form__item-input-tarif .__select._red {
+  position: relative;
+  z-index: 10010;
+  background: #fff;
   margin-bottom: 40px;
   border-bottom: 1px solid transparent;
 }
@@ -409,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cl-checkbox__label {
-  margin: 0 10px 0 0;
+  margin: 0 10px 0 2px;
   width: 100%;
   font-size: 14px;
   font-weight: 300;
@@ -1117,4 +1178,331 @@ h1, h2, h3, h4, h5, h6 {
 
 .cl-get__button {
   margin-top: auto;
+}
+
+.cl-price__title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.cl-price {
+  position: relative;
+}
+
+.cl-price__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.cl-price__line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  border: 1px solid #E5E5E5;
+}
+
+.cl-price__apart {
+  padding: 75px 80px;
+  margin-left: auto;
+  margin-right: 59px;
+  max-width: 367px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cl-price__apart-title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cl-price__apart-price {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #009AF2;
+  margin-top: 10px;
+}
+
+.cl-price__gross {
+  padding: 85px 100px;
+  background: #0380C8;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 416px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+.cl-price__gross-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.cl-price__gross-price {
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cl-profit {
+  margin-top: 100px;
+}
+
+.cl-profit .row {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+@media (max-width: 575.98px) {
+  .cl-profit .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.cl-profit__title {
+  text-align: center;
+}
+
+.cl-profit__block {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cl-profit__block-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+@media (max-width: 575.98px) {
+  .cl-profit__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.cl-profit__img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 1199.98px) {
+  .cl-profit__img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cl-profit__img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cl-profit__img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cl-profit__img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.cl-profit__img img {
+  width: auto;
+  height: 100%;
+}
+
+.cl-profit__text {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 50px;
+}
+
+@media (max-width: 1199.98px) {
+  .cl-profit__text {
+    font-size: 20px;
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cl-profit__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cl-profit__text {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cl-profit__text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.cl-leaders__title {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cl-leaders__leader-outer {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+@media (max-width: 575.98px) {
+  .cl-leaders__leader-outer {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.cl-leaders__leader-wrapper {
+  margin-top: 60px;
+}
+
+.cl-leaders__leader-wrapper > .col-12 {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.cl-leaders__photo {
+  position: relative;
+  overflow: hidden;
+  padding-top: 134%;
+  border-radius: 20px;
+}
+
+.cl-leaders__photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.cl-leaders__leader-name {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 575.98px) {
+  .cl-leaders__leader-name {
+    margin-top: 20px;
+  }
+}
+
+.cl-leaders__leader-post {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.cl-leaders__leader-facts {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.cl-leaders__leader-painting {
+  width: 182px;
+  height: 80px;
+  padding-top: 10px;
+  border-top: 1px solid #E5E5E5;
+}
+
+@media (max-width: 991.98px) {
+  .cl-leaders__leader-painting {
+    width: 140px;
+    height: 62px;
+  }
+}
+
+.cl-leaders__leader-painting img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
