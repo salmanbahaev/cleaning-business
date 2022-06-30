@@ -614,7 +614,7 @@ $blue: #009AF2;
         left: 0px;
         width: 100%;
         height: 100%;
-     background-image:url('/img/brand-prev.png');
+     background-image:url('../img/brand-prev.png');
       background-size: 100%;
       border: none;
       text-indent: -999em;
@@ -657,7 +657,7 @@ $blue: #009AF2;
         margin: auto;
         width: 6%;
         height: 14%;
-        background: url('/img/play-triang.svg') 50% 50% no-repeat;
+        background: url('../img/play-triang.svg') 50% 50% no-repeat;
         transition: all 0.5s ease;
         background-size: contain;
     }
@@ -865,19 +865,19 @@ $blue: #009AF2;
   }
 
   &__card-1 {
-    background: url("/img/course-1.png") center/cover no-repeat;
+    background: url("../img/course-1.png") center/cover no-repeat;
   }
   &__card-2 {
-    background: url("/img/course-2.png") center/cover no-repeat;
+    background: url("../img/course-2.png") center/cover no-repeat;
   }
   &__card-3 {
-    background: url("/img/course-3.png") center/cover no-repeat;
+    background: url("../img/course-3.png") center/cover no-repeat;
   }
   &__card-4 {
-    background: url("/img/course-4.png") center/cover no-repeat;
+    background: url("../img/course-4.png") center/cover no-repeat;
   }
   &__card-5 {
-    background: url("/img/course-5.png") center/cover no-repeat;
+    background: url("../img/course-5.png") center/cover no-repeat;
   }
 
   &__card:after {
@@ -1242,3 +1242,8 @@ $blue: #009AF2;
   }
 }
 
+// ========== PARTNERS
+.cl-partners {
+  margin: 100px 0 64px;
+  text-align: center;
+}

@@ -102,4 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // подставляем в src параметр из data
     iframe.attr('src',src);
   }
+
+  $('.slider').slick();
 })
