@@ -103,5 +103,35 @@ document.addEventListener('DOMContentLoaded', function() {
     iframe.attr('src',src);
   }
 
-  $('.slider').slick();
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    adaptiveHeight: true, 
+    arrows: true,
+    speed: 800,
+    easing: 'ease',
+    // autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          arrows: true,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 1320,
+        settings: {
+          arrows: true,
+          dots: true,
+        }
+      }
+    ]  
+  });
 })
