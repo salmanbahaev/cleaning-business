@@ -1702,7 +1702,31 @@ h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
 }
 
-.cssSlider .slides > li:first-child:not(:target) {
+.cssSlider .slides-1 > li:first-child:not(:target) {
+  z-index: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.cssSlider .slides-2 > li:first-child:not(:target) {
+  z-index: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.cssSlider .slides-3 > li:first-child:not(:target) {
+  z-index: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.cssSlider .slides-4 > li:first-child:not(:target) {
+  z-index: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.cssSlider .slides-5 > li:first-child:not(:target) {
   z-index: 1;
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
