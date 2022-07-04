@@ -104,14 +104,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   $('.slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     adaptiveHeight: true, 
     arrows: true,
     speed: 800,
     easing: 'ease',
-    // autoplay: true,
     autoplaySpeed: 5000,
     pauseOnFocus: true,
     pauseOnHover: true,
