@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
     infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
-    adaptiveHeight: true, 
+    adaptiveHeight: false, 
     arrows: true,
     speed: 800,
     easing: 'ease',
