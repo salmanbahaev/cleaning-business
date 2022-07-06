@@ -2777,6 +2777,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 120px;
 }
 
+.cl-other__light .cl-other__item {
+  padding: 0 20px;
+}
+
 .cl-other__title {
   margin-bottom: 40px;
   text-align: center;
@@ -2785,6 +2789,13 @@ h1, h2, h3, h4, h5, h6 {
 .cl-other .row {
   margin-left: -30px;
   margin-right: -30px;
+}
+
+@media (max-width: 575.98px) {
+  .cl-other .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 .cl-other__card {
@@ -2804,6 +2815,34 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .cl-other__card {
+    min-height: 240px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cl-other__card {
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cl-other__card {
+    max-width: 400px;
+    min-height: 230px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cl-other__card {
+    min-height: 190px;
+  }
 }
 
 .cl-other__card-1 span {
@@ -2842,6 +2881,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+@media (max-width: 400px) {
+  .cl-other__card-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .cl-other__card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2856,15 +2902,49 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
 
+@media (max-width: 400px) {
+  .cl-other__card-text-1 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 .cl-other__card-text-2 {
   font-size: 24px;
   line-height: 135%;
   margin-bottom: 10px;
 }
 
+@media (max-width: 400px) {
+  .cl-other__card-text-2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
 .cl-other__card-text-3 {
   font-size: 16px;
   line-height: 135%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .cl-other__card-text-3 {
+    max-width: 218px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cl-other__card-text-3 {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cl-other__card-text-3 {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 130px;
+  }
 }
 
 .cl-other__card-right {
@@ -2874,6 +2954,38 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: -25px;
   font-size: 16px;
   line-height: 135%;
+  max-width: 120px;
+}
+
+@media (max-width: 1199.98px) {
+  .cl-other__card-right {
+    font-size: 15px;
+    max-width: 110px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .cl-other__card-right {
+    margin-bottom: -20px;
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cl-other__card-right {
+    margin-bottom: -15px;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cl-other__card-right {
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 0;
+    margin-bottom: 0;
+    max-width: 100px;
+  }
 }
 
 .cl-other__info {
@@ -2894,11 +3006,51 @@ h1, h2, h3, h4, h5, h6 {
 .cl-other__info .row {
   padding-left: 15px;
   padding-right: 15px;
+  min-height: 135px;
+}
+
+@media (max-width: 1199.98px) {
+  .cl-other__info .row {
+    min-height: 125px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cl-other__info .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 .cl-other__info-title {
   font-size: 16px;
   line-height: 135%;
+}
+
+@media (max-width: 991.98px) {
+  .cl-other__info-title {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cl-other__info-title {
+    text-align: left;
+  }
+}
+
+.cl-other__info-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .cl-other__item {
@@ -2918,6 +3070,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-.cl-other__item:first-child {
-  margin-bottom: 45px;
+@media (max-width: 1199.98px) {
+  .cl-other__item p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cl-other__item p {
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cl-other__item {
+    margin-top: 20px;
+  }
 }
