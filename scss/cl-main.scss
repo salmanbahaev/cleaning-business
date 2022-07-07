@@ -1246,6 +1246,7 @@ $blue: #009AF2;
 
 // ========== PARTNERS
 .cl-partners {
+  margin-bottom: 200px;
   
   &__title {
     margin: 100px 0 64px;
@@ -1546,7 +1547,53 @@ $blue: #009AF2;
 
 
 .cl-be {
-  // margin-top: 200px;
+  background: linear-gradient(272.48deg, #005A8D 19.65%, #009AF2 100%);
+  padding: 40px 0 86px;
+ 
+  &__title {
+    text-align: center;
+    color: #fff;
+  }
+
+  &__input-p {
+    margin-top: 40px;
+    height: 60px;
+  }
+
+  input {
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 20px;
+    line-height: 135%;
+    color: #555;
+
+    &::placeholder {
+      color: #E5E5E5;
+    }
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #009AF2;
+    padding: 16px 34px;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 10px;
+    margin-left: auto;
+  }
+}
+.cl-be-2 {
+  margin-top: 210px;
+}
+.cl-be-3 {
+  margin-top: 140px;
+  background: #0380C8;
 }
 
 
@@ -2538,12 +2585,6 @@ $blue: #009AF2;
       margin-top: 20px;
     }
   }
-
-  &__item:first-child {
-    // margin-bottom: 45px;
-  }
-
-  &__content {}
 }
 
 
