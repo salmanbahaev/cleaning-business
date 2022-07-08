@@ -77,12 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return !/^\w+([\.]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
   }
 
-
-  // ==================
-  // if($('.__select__title').text() === 'Выберите тариф') {
-  //   console.log(555)
-  // }
-
   $(document).on('click','.js-videoPoster',function(e) {
     //отменяем стандартное действие button
     e.preventDefault();

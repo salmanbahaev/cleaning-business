@@ -570,9 +570,9 @@ $blue: #009AF2;
 
 // =========== STEP 1
 .cl-step-1 {
+  padding-top: 100px;
 
   &__brand-name {
-    margin-top: 100px;
     
     p {
       text-align: center;
@@ -702,9 +702,186 @@ $blue: #009AF2;
 
 .cl-step-2 {
 
+  .modal-dialog {
+    border-radius: 20px;
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    @media (min-width: 575px) {
+      max-width: 1100px;
+      margin: 1.75rem auto;
+    }
+
+    .modal-content {
+      border-radius: 20px;
+      .close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-header-img {
+
+      }
+    }
+
+    .modal-body {
+      padding: 30px 80px 80px;
+
+      &-h3 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+        margin: 40px 0;
+      }
+
+      &-ul {
+        padding-left: 30px;
+        margin-bottom: 0;
+
+        li {
+          list-style: disc;
+          padding-bottom: 10px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+          
+      }
+    }
+  }
+
   &__brand-type {
     margin-top: 100px;
     text-align: center;
+  }
+
+  &__video {
+    border-radius: 20px;
+    overflow: hidden;
+
+    .video_wrapper {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      background-color: #000;
+    }
+    .video_wrapper_full {
+      padding-top: 50%;
+    }
+    
+    
+    .videoIframe {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+    }
+    
+    .videoPoster {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+      background-image:url('../img/modal-1.png');
+      background-size: 100%;
+      border: none;
+      text-indent: -999em;
+      overflow: hidden;
+      opacity: 1;
+      -webkit-transition: opacity 800ms, height 0s;
+      -moz-transition: opacity 800ms, height 0s;
+      transition: opacity 800ms, height 0s;
+      -webkit-transition-delay: 0s, 0s;
+      -moz-transition-delay: 0s, 0s;
+      transition-delay: 0s, 0s;
+    }
+    .videoPoster:hover {
+      cursor: pointer;
+    }
+    .videoPoster:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      -webkit-transition: border-color 300ms;
+      -moz-transition: border-color 300ms;
+      transition: border-color 300ms;
+      transition: all 0.5s ease;
+    }
+    .videoPoster:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        background: url('../img/play-triang.svg') 50% 50% no-repeat;
+        transition: all 0.5s ease;
+        background-size: contain;
+    }
+    .videoPoster:hover:before,  .videoPoster:focus:before {
+        border-color: #0380C8;
+        -webkit-box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.4);
+    -moz-box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.4);
+    box-shadow: 0px 0px 16px 5px rgba(34, 60, 80, 0.4);
+      }
+      .videoPoster:hover:after, .videoPoster:focus:after {
+        border-left-color: #0380C8;
+    }
+    .videoWrapperActive .videoPoster {
+      opacity: 0;
+      height: 0;
+      -webkit-transition-delay: 0s, 800ms;
+      -moz-transition-delay: 0s, 800ms;
+      transition-delay: 0s, 800ms;
+    }
+
+    #exampleModal-1 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
+
+    #exampleModal-2 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
+    #exampleModal-3 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
+    #exampleModal-4 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
+    #exampleModal-5 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
+    #exampleModal-6 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
+    #exampleModal-7 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
+    #exampleModal-8 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
+    #exampleModal-3-1 .videoPoster {
+      background-image:url('../img/modal-1.png');
+    }
   }
 
   &__clining,
@@ -834,9 +1011,60 @@ $blue: #009AF2;
 
 // =========== STEP 3
 .cl-step-3 {
+  padding-top: 100px;
+
+  .modal-dialog {
+    border-radius: 20px;
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    @media (min-width: 575px) {
+      max-width: 1100px;
+      margin: 1.75rem auto;
+    }
+
+    .modal-content {
+      border-radius: 20px;
+      .close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-header-img {
+
+      }
+    }
+
+    .modal-body {
+      padding: 30px 80px 80px;
+
+      &-h3 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+        margin: 40px 0;
+      }
+
+      &-ul {
+        padding-left: 30px;
+        margin-bottom: 0;
+
+        li {
+          list-style: disc;
+          padding-bottom: 10px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+          
+      }
+    }
+  }
 
   &__title {
-    margin-top: 100px;
 
     p {
       text-align: center;
@@ -1248,6 +1476,57 @@ $blue: #009AF2;
 .cl-partners {
   margin-bottom: 200px;
   
+  .modal-dialog {
+    border-radius: 20px;
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    @media (min-width: 575px) {
+      max-width: 1100px;
+      margin: 1.75rem auto;
+    }
+
+    .modal-content {
+      border-radius: 20px;
+      .close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-header-img {
+
+      }
+    }
+
+    .modal-body {
+      padding: 30px 80px 80px;
+
+      &-h3 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+        margin: 40px 0;
+      }
+
+      &-ul {
+        padding-left: 30px;
+        margin-bottom: 0;
+
+        li {
+          list-style: disc;
+          padding-bottom: 10px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+          
+      }
+    }
+  }
+
   &__title {
     margin: 100px 0 64px;
     text-align: center;
@@ -1548,18 +1827,37 @@ $blue: #009AF2;
 
 .cl-be {
   background: linear-gradient(272.48deg, #005A8D 19.65%, #009AF2 100%);
-  padding: 40px 0 86px;
+  
+  .container {
+    padding: 40px 0 86px;
+    position: relative;
+    z-index: 0;
+  }
+
+  &__form {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__man {
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    z-index: 5;
+  }
  
   &__title {
     text-align: center;
     color: #fff;
+    position: relative;
+    z-index: 10;
   }
 
   &__input-p {
     margin-top: 40px;
     height: 60px;
   }
-
+  
   input {
     width: 100%;
     height: 60px;
@@ -1579,21 +1877,157 @@ $blue: #009AF2;
     justify-content: center;
     align-items: center;
     background: #009AF2;
-    padding: 16px 34px;
+    padding: 0 34px;
     height: 100%;
     color: #fff;
     font-size: 20px;
     line-height: 23px;
     border-radius: 10px;
     margin-left: auto;
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      margin-left: 10px;
+      margin-bottom: -3px;
+    }
   }
+
+  // SELECT
+
+  .select {
+    position: relative;
+  }
+  .select__item {
+    position: relative;
+  }
+  .select__title {
+    color: #000;
+    // border: 1px solid #d9d9d9;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .select__value {
+    font-family: 'NoirPro', sans-serif;
+    display: flex;
+    font-size: 20px;
+    line-height: 135%;
+    color: #555;
+    height: 60px;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .select__value span {
+    // height: 1em;
+    font-size: 20px;
+    line-height: 135%;
+    color: #555;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .select__value::before {
+    content: "";
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 22px;
+    height: 10px;
+    background: url("../img/arrs.svg") center / 100% no-repeat;
+  }
+  .select__options {
+    color: #000;
+    display: none;
+    height: auto;
+    font-size: 20px !important;
+    line-height: 135%;
+    color: #555;
+    position: absolute;
+    top: 49px;
+    border-radius: 0 0 10px 10px;
+    min-width: 100%;
+    left: 0;
+    background-color: #fff;
+    border-top: 0;
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    font-size: 16px;
+    padding: 0px 0px 5px 0px;
+  }
+  .select__option {
+    cursor: pointer;
+    padding: 0px 20px;
+    margin: 20px 0px 10px 0px;
+  }
+  .select._active {
+    z-index: 5;
+  }
+  .select._active .select__value::before {
+    transform: rotate(-180deg);
+  }
+  .select._active.select__options {
+    display: block;
+  }
+  
 }
 .cl-be-2 {
   margin-top: 210px;
+
+  .container {
+    padding: 40px 0 86px;
+    position: relative;
+    z-index: 0;
+  }
+
+  &__form {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__man {
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    z-index: 5;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 10;
+  }
 }
 .cl-be-3 {
   margin-top: 140px;
   background: #0380C8;
+
+  .container {
+    padding: 40px 0 86px;
+    position: relative;
+    z-index: 0;
+  }
+
+  &__form {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__man {
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    z-index: 5;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 10;
+  }
 }
 
 
@@ -1783,7 +2217,7 @@ $blue: #009AF2;
   }
   .card-header {
     background-color: transparent;
-    padding: 26px 30px 26px 0;
+    padding: 30px 30px 20px 0;
     border-bottom: 1px solid #E5E5E5;
 
     @media (max-width: 500px) {
@@ -2337,7 +2771,10 @@ $blue: #009AF2;
 
   &__light {
     .cl-other__item {
-      padding: 0 20px;
+      
+      @media (max-width: 575.98px) {
+        padding: 0 20px;
+      }
     }
   }
 

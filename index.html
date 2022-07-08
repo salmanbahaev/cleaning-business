@@ -123,27 +123,27 @@
           <div class="col-4">
             <div class="cl-short__step cl-short__step-1">
               <div class="cl-short__step-title">Брендинг</div>
-              <a href="#" class="cl-short__step-button cl-button-mini">Подробнее</a>
+              <a href="#cl-step-1" class="cl-short__step-button cl-button-mini">Подробнее</a>
             </div>
           </div>
           <div class="col-4">
             <div class="cl-short__step cl-short__step-2">
               <div class="cl-short__step-title">Построение отделов</div>
-              <a href="#" class="cl-short__step-button cl-button-mini">Подробнее</a>
+              <a href="#cl-step-2" class="cl-short__step-button cl-button-mini">Подробнее</a>
             </div>
           </div>
           <div class="col-4">
             <div class="cl-short__step cl-short__step-3">
               <div class="cl-short__step-title">Обучение руководителей
                 и персонала</div>
-              <a href="#" class="cl-short__step-button cl-button-mini">Подробнее</a>
+              <a href="#cl-step-3" class="cl-short__step-button cl-button-mini">Подробнее</a>
             </div>
           </div>
         </div>
       </div>
     </section> 
 
-    <section class="cl-step-1">
+    <section class="cl-step-1" id="cl-step-1">
       <div class="container">
 
         <div class="row cl-step-1__brand-name">
@@ -172,7 +172,7 @@
       </div>
     </section>
 
-    <section class="cl-step-2">
+    <section class="cl-step-2" id="cl-step-2">
       <div class="container">
 
         <div class="row">
@@ -203,9 +203,45 @@
                         <li>Адаптация сотрудников</li>
                       </ul>
                     </div>
+
+                    <!-- Кнопка-триггер модального окна -->
                     <div class="cl-card__button">
-                      <a href="#" class="cl-button-mini">Подробнее</a>
+                      <a type="button" class="btn btn-primary cl-button-mini" data-toggle="modal" data-target="#exampleModal-1" >Подробнее</a>
                     </div>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img class="modal-header-img" src="img/arrs.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            
+                            <div class="cl-step-2__video">
+                              <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                                <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button class="videoPoster js-videoPoster"></button>
+                              </div>
+                            </div>
+
+                            <h3 class="modal-body-h3">
+                              Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                            </h3>
+
+                            <ul class="modal-body-ul">
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
   
@@ -221,9 +257,43 @@
                         <li>Покупка оборудования</li>
                       </ul>
                     </div>
+                    <!-- Кнопка-триггер модального окна -->
                     <div class="cl-card__button">
-                      <a href="#" class="cl-button-mini">Подробнее</a>
+                      <a type="button" class="btn btn-primary cl-button-mini" data-toggle="modal" data-target="#exampleModal-2" >Подробнее</a>
                     </div>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img class="modal-header-img" src="img/arrs.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="cl-step-2__video">
+                              <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                                <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button class="videoPoster js-videoPoster"></button>
+                              </div>
+                            </div>
+
+                            <h3 class="modal-body-h3">
+                              Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                            </h3>
+
+                            <ul class="modal-body-ul">
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -281,8 +351,41 @@
                         <li>Определение цели</li>
                       </ul>
                     </div>
+                    <!-- Кнопка-триггер модального окна -->
                     <div class="cl-card__button">
-                      <a href="#" class="cl-button-mini">Подробнее</a>
+                      <a type="button" class="btn btn-primary cl-button-mini" data-toggle="modal" data-target="#exampleModal-3" >Подробнее</a>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img class="modal-header-img" src="img/arrs.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="cl-step-2__video">
+                              <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                                <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button class="videoPoster js-videoPoster"></button>
+                              </div>
+                            </div>
+
+                            <h3 class="modal-body-h3">
+                              Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                            </h3>
+
+                            <ul class="modal-body-ul">
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -299,8 +402,41 @@
                         <li>Стратегия развития</li>
                       </ul>
                     </div>
+                    <!-- Кнопка-триггер модального окна -->
                     <div class="cl-card__button">
-                      <a href="#" class="cl-button-mini">Подробнее</a>
+                      <a type="button" class="btn btn-primary cl-button-mini" data-toggle="modal" data-target="#exampleModal-4" >Подробнее</a>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img class="modal-header-img" src="img/arrs.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="cl-step-2__video">
+                              <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                                <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button class="videoPoster js-videoPoster"></button>
+                              </div>
+                            </div>
+
+                            <h3 class="modal-body-h3">
+                              Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                            </h3>
+
+                            <ul class="modal-body-ul">
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -358,8 +494,41 @@
                         <li>Обучение менеджера по продажам</li>
                       </ul>
                     </div>
+                    <!-- Кнопка-триггер модального окна -->
                     <div class="cl-card__button">
-                      <a href="#" class="cl-button-mini">Подробнее</a>
+                      <a type="button" class="btn btn-primary cl-button-mini" data-toggle="modal" data-target="#exampleModal-5" >Подробнее</a>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img class="modal-header-img" src="img/arrs.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="cl-step-2__video">
+                              <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                                <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button class="videoPoster js-videoPoster"></button>
+                              </div>
+                            </div>
+
+                            <h3 class="modal-body-h3">
+                              Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                            </h3>
+
+                            <ul class="modal-body-ul">
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -375,8 +544,41 @@
                         <li>Правильные доп. продажи</li>
                       </ul>
                     </div>
+                    <!-- Кнопка-триггер модального окна -->
                     <div class="cl-card__button">
-                      <a href="#" class="cl-button-mini">Подробнее</a>
+                      <a type="button" class="btn btn-primary cl-button-mini" data-toggle="modal" data-target="#exampleModal-6" >Подробнее</a>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img class="modal-header-img" src="img/arrs.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="cl-step-2__video">
+                              <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                                <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button class="videoPoster js-videoPoster"></button>
+                              </div>
+                            </div>
+
+                            <h3 class="modal-body-h3">
+                              Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                            </h3>
+
+                            <ul class="modal-body-ul">
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -434,8 +636,41 @@
                         <li>Подготовка договоров и актов с клиентами</li>
                       </ul>
                     </div>
+                    <!-- Кнопка-триггер модального окна -->
                     <div class="cl-card__button">
-                      <a href="#" class="cl-button-mini">Подробнее</a>
+                      <a type="button" class="btn btn-primary cl-button-mini" data-toggle="modal" data-target="#exampleModal-7" >Подробнее</a>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img class="modal-header-img" src="img/arrs.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="cl-step-2__video">
+                              <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                                <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button class="videoPoster js-videoPoster"></button>
+                              </div>
+                            </div>
+
+                            <h3 class="modal-body-h3">
+                              Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                            </h3>
+
+                            <ul class="modal-body-ul">
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -451,8 +686,41 @@
                         <li>Отчёт о движении денежных средств</li>
                       </ul>
                     </div>
+                    <!-- Кнопка-триггер модального окна -->
                     <div class="cl-card__button">
-                      <a href="#" class="cl-button-mini">Подробнее</a>
+                      <a type="button" class="btn btn-primary cl-button-mini" data-toggle="modal" data-target="#exampleModal-8" >Подробнее</a>
+                    </div>
+
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="exampleModal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <img class="modal-header-img" src="img/arrs.svg" alt="">
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="cl-step-2__video">
+                              <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                                <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button class="videoPoster js-videoPoster"></button>
+                              </div>
+                            </div>
+
+                            <h3 class="modal-body-h3">
+                              Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                            </h3>
+
+                            <ul class="modal-body-ul">
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                              <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -495,7 +763,7 @@
       </div>
     </section>
 
-    <section class="cl-step-3">
+    <section class="cl-step-3" id="cl-step-3">
       <div class="container">
         <div class="row cl-step-3__title">
           <div class="col-12">
@@ -507,33 +775,199 @@
             <div class="cl-step-3__card cl-step-3__card-1">
               <p class="cl-step-3__card-title">Курс «Управление бизнесом в сфере
                 клининговых услуг»</p>
-              <a href="#" class="cl-step-3__button cl-button-mini">Подробнее</a>
+
+              <!-- Кнопка-триггер модального окна -->
+              <a type="button" class="btn btn-primary cl-button-mini cl-step-3__button" data-toggle="modal" data-target="#exampleModal-3-1" >Подробнее</a>
+
+              <!-- Модальное окно -->
+              <div class="modal fade" id="exampleModal-3-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img class="modal-header-img" src="img/arrs.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="cl-step-2__video">
+                        <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                          <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <button class="videoPoster js-videoPoster"></button>
+                        </div>
+                      </div>
+
+                      <h3 class="modal-body-h3">
+                        1 - Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                      </h3>
+
+                      <ul class="modal-body-ul">
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
           <div class="col-4">
             <div class="cl-step-3__card cl-step-3__card-2">
               <p class="cl-step-3__card-title">Курс «Организация бизнеса в сфере
                 мобильной химчистки»</p>
-              <a href="#" class="cl-step-3__button cl-button-mini">Подробнее</a>
+                <a type="button" class="btn btn-primary cl-button-mini cl-step-3__button" data-toggle="modal" data-target="#exampleModal-3-2" >Подробнее</a>
+
+                <!-- Модальное окно -->
+                <div class="modal fade" id="exampleModal-3-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <img class="modal-header-img" src="img/arrs.svg" alt="">
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="cl-step-2__video">
+                          <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                            <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <button class="videoPoster js-videoPoster"></button>
+                          </div>
+                        </div>
+  
+                        <h3 class="modal-body-h3">
+                          2 - Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                        </h3>
+  
+                        <ul class="modal-body-ul">
+                          <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                          <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                          <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
           <div class="col-4">
             <div class="cl-step-3__card cl-step-3__card-3">
               <p class="cl-step-3__card-title">Курс «Промышленный клининг»</p>
-              <a href="#" class="cl-step-3__button cl-button-mini">Подробнее</a>
+              
+              <!-- Кнопка-триггер модального окна -->
+              <a type="button" class="btn btn-primary cl-button-mini cl-step-3__button" data-toggle="modal" data-target="#exampleModal-3-3" >Подробнее</a>
+
+              <!-- Модальное окно -->
+              <div class="modal fade" id="exampleModal-3-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img class="modal-header-img" src="img/arrs.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="cl-step-2__video">
+                        <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                          <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <button class="videoPoster js-videoPoster"></button>
+                        </div>
+                      </div>
+
+                      <h3 class="modal-body-h3">
+                        3 - Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                      </h3>
+
+                      <ul class="modal-body-ul">
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="offset-2 col-4">
             <div class="cl-step-3__card cl-step-3__card-4">
               <p class="cl-step-3__card-title">Курс «Руководство менеджера
                 мобильной бригады»</p>
-              <a href="#" class="cl-step-3__button cl-button-mini">Подробнее</a>
+              <!-- Кнопка-триггер модального окна -->
+              <a type="button" class="btn btn-primary cl-button-mini cl-step-3__button" data-toggle="modal" data-target="#exampleModal-3-4" >Подробнее</a>
+
+              <!-- Модальное окно -->
+              <div class="modal fade" id="exampleModal-3-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img class="modal-header-img" src="img/arrs.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="cl-step-2__video">
+                        <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                          <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <button class="videoPoster js-videoPoster"></button>
+                        </div>
+                      </div>
+
+                      <h3 class="modal-body-h3">
+                        4 - Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                      </h3>
+
+                      <ul class="modal-body-ul">
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="col-4">
             <div class="cl-step-3__card cl-step-3__card-5">
               <p class="cl-step-3__card-title">Курс «Руководство клинера»</p>
-              <a href="#" class="cl-step-3__button cl-button-mini">Подробнее</a>
+              <!-- Кнопка-триггер модального окна -->
+              <a type="button" class="btn btn-primary cl-button-mini cl-step-3__button" data-toggle="modal" data-target="#exampleModal-3-5" >Подробнее</a>
+
+              <!-- Модальное окно -->
+              <div class="modal fade" id="exampleModal-3-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img class="modal-header-img" src="img/arrs.svg" alt="">
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="cl-step-2__video">
+                        <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                          <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <button class="videoPoster js-videoPoster"></button>
+                        </div>
+                      </div>
+
+                      <h3 class="modal-body-h3">
+                        5 - Текст-«рыба» — это заготовленный, скопированный или собственноручно написанный текст для экономии времени, который вставляется в макет.
+                      </h3>
+
+                      <ul class="modal-body-ul">
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                        <li>Текст-«рыба» — это заготовленный, скопированный текст</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           
@@ -555,7 +989,7 @@
                 <img src="img/get-1.svg" alt="">
               </div>
               <p>Доступ к курсам. Формирование расписания занятий</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -565,7 +999,7 @@
                 <img src="img/get-2.svg" alt="">
               </div>
               <p>Нейминг и брендинг. Фирменный стиль</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -575,7 +1009,7 @@
                 <img src="img/get-3.svg" alt="">
               </div>
               <p>Zoom сессии с куратором</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -585,7 +1019,7 @@
                 <img src="img/get-4.svg" alt="">
               </div>
               <p>Разработка платформы бренда</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -595,7 +1029,7 @@
                 <img src="img/get-5.svg" alt="">
               </div>
               <p>Установка сайта и рекламы</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -605,7 +1039,7 @@
                 <img src="img/get-6.svg" alt="">
               </div>
               <p>Оформление соц сетей</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -615,7 +1049,7 @@
                 <img src="img/get-7.svg" alt="">
               </div>
               <p>Помощь в подборе и обучении персонала</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -625,7 +1059,7 @@
                 <img src="img/get-8.svg" alt="">
               </div>
               <p>Помощь в открытии юр.лица</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -635,7 +1069,7 @@
                 <img src="img/get-9.svg" alt="">
               </div>
               <p>Тех поддержка команды</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -645,7 +1079,7 @@
                 <img src="img/get-10.svg" alt="">
               </div>
               <p>Оцифровка бизнеса: ДДС, P&L, Баланс</p>
-              <a href="#" class="cl-get__button cl-button-mini">Подробнее</a>
+              <a href="#cl-be-3" class="cl-get__button cl-button-mini">Подробнее</a>
             </div>
           </div>
 
@@ -783,6 +1217,111 @@
           </div>
         </div>
 
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal-4-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <img class="modal-header-img" src="img/arrs.svg" alt="">
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="cl-step-2__video">
+                  <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="videoPoster js-videoPoster"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal-4-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <img class="modal-header-img" src="img/arrs.svg" alt="">
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="cl-step-2__video">
+                  <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="videoPoster js-videoPoster"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal-4-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <img class="modal-header-img" src="img/arrs.svg" alt="">
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="cl-step-2__video">
+                  <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="videoPoster js-videoPoster"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal-4-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <img class="modal-header-img" src="img/arrs.svg" alt="">
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="cl-step-2__video">
+                  <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="videoPoster js-videoPoster"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal-4-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <img class="modal-header-img" src="img/arrs.svg" alt="">
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="cl-step-2__video">
+                  <div class="cl-step-2__video-play video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="https://www.youtube.com/embed/Ke32nHqivJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="videoPoster js-videoPoster"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="slider">
 
           <div class="slider__item">
@@ -815,7 +1354,11 @@
                   <p class="cl-partners__slider-text "><span>Время на запуск: </span> 4 месяца</p>
                   <p class="cl-partners__slider-text"><span>Прибыль в месяц: </span> 1 250 000р.</p>
                   <p class="cl-partners__slider-text"><span>Пакет: </span> “название пакета”</p>
-                  <div class="d-flex"><a href="#" class="cl-partners__button cl-button-mini">Видео-отзыв</a></div>
+                  <div class="d-flex">
+
+                    <!-- Кнопка-триггер модального окна -->
+                    <a type="button" class="btn btn-primary cl-button-mini cl-partners__button" data-toggle="modal" data-target="#exampleModal-4-1" >Видео-отзыв</a>
+                  </div>
                 </div>
               </div>
 
@@ -855,7 +1398,10 @@
                   <p class="cl-partners__slider-text "><span>Время на запуск: </span> 4 месяца</p>
                   <p class="cl-partners__slider-text"><span>Прибыль в месяц: </span> 1 250 000р.</p>
                   <p class="cl-partners__slider-text"><span>Пакет: </span> “название пакета”</p>
-                  <div class="d-flex"><a href="#" class="cl-partners__button cl-button-mini">Видео-отзыв</a></div>
+                  <div class="d-flex">
+                    <!-- Кнопка-триггер модального окна -->
+                    <a type="button" class="btn btn-primary cl-button-mini cl-partners__button" data-toggle="modal" data-target="#exampleModal-4-2" >Видео-отзыв</a>
+                  </div>
                 </div>
               </div>
               <div class="cl-partners__time">
@@ -893,7 +1439,10 @@
                   <p class="cl-partners__slider-text "><span>Время на запуск: </span> 4 месяца</p>
                   <p class="cl-partners__slider-text"><span>Прибыль в месяц: </span> 1 250 000р.</p>
                   <p class="cl-partners__slider-text"><span>Пакет: </span> “название пакета”</p>
-                  <div class="d-flex"><a href="#" class="cl-partners__button cl-button-mini">Видео-отзыв</a></div>
+                  <div class="d-flex">
+                    <!-- Кнопка-триггер модального окна -->
+                    <a type="button" class="btn btn-primary cl-button-mini cl-partners__button" data-toggle="modal" data-target="#exampleModal-4-3" >Видео-отзыв</a>
+                  </div>
                 </div>
               </div>
               <div class="cl-partners__time">
@@ -931,7 +1480,10 @@
                   <p class="cl-partners__slider-text "><span>Время на запуск: </span> 4 месяца</p>
                   <p class="cl-partners__slider-text"><span>Прибыль в месяц: </span> 1 250 000р.</p>
                   <p class="cl-partners__slider-text"><span>Пакет: </span> “название пакета”</p>
-                  <div class="d-flex"><a href="#" class="cl-partners__button cl-button-mini">Видео-отзыв</a></div>
+                  <div class="d-flex">
+                    <!-- Кнопка-триггер модального окна -->
+                    <a type="button" class="btn btn-primary cl-button-mini cl-partners__button" data-toggle="modal" data-target="#exampleModal-4-4" >Видео-отзыв</a>
+                  </div>
                 </div>
               </div>
               <div class="cl-partners__time">
@@ -969,7 +1521,10 @@
                   <p class="cl-partners__slider-text "><span>Время на запуск: </span> 4 месяца</p>
                   <p class="cl-partners__slider-text"><span>Прибыль в месяц: </span> 1 250 000р.</p>
                   <p class="cl-partners__slider-text"><span>Пакет: </span> “название пакета”</p>
-                  <div class="d-flex"><a href="#" class="cl-partners__button cl-button-mini">Видео-отзыв</a></div>
+                  <div class="d-flex">
+                    <!-- Кнопка-триггер модального окна -->
+                    <a type="button" class="btn btn-primary cl-button-mini cl-partners__button" data-toggle="modal" data-target="#exampleModal-4-5" >Видео-отзыв</a>
+                  </div>
                 </div>
               </div>
               <div class="cl-partners__time">
@@ -988,7 +1543,7 @@
             <p class="cl-be__title title-text">Стать нашим партнёром</p>
           </div>
         </div>
-        <form action="#">
+        <form action="#" class="cl-be__form">
           <div class="row">
             <div class="col-3 cl-be__input-p">
               <input type="text" placeholder="Имя">
@@ -997,13 +1552,25 @@
               <input type="tel" placeholder="Телефон">
             </div>
             <div class="col-3 cl-be__input-p">
-              <input type="text" placeholder="Мессенджер">
+              <div class="form__item">
+                <select name="messenger" class="form__select">
+                  <option value="Мобильный">Мобильный</option>
+                  <option value="Telegram">Telegram</option>
+                  <option value="Whatsapp">Whatsapp</option>
+                </select>
+              </div>
             </div>
             <div class="col-3 cl-be__input-p">
-              <button type="submit" class="cl-be__form-btn"><p>Отправить</p><img src="" alt=""></button>
+              <button type="submit" class="cl-be__form-btn">
+                <div>
+                  <p>Отправить</p>
+                  <img src="img/messg.svg" alt="">
+                </div>
+              </button>
             </div>
           </div>
         </form>
+        <img src="img/man.png" class="cl-be__man"></img>
       </div>
     </section>
 
@@ -1343,7 +1910,7 @@
             <p class="cl-be__title title-text">Изучите таблицу вложений со сроком окупаемости</p>
           </div>
         </div>
-        <form action="#">
+        <form action="#" class="cl-be__form">
           <div class="row">
             <div class="col-3 cl-be__input-p">
               <input type="text" placeholder="Имя">
@@ -1352,13 +1919,25 @@
               <input type="tel" placeholder="Телефон">
             </div>
             <div class="col-3 cl-be__input-p">
-              <input type="text" placeholder="Мессенджер">
+              <div class="form__item">
+                <select name="messenger" class="form__select">
+                  <option value="Мобильный">Мобильный</option>
+                  <option value="Telegram">Telegram</option>
+                  <option value="Whatsapp">Whatsapp</option>
+                </select>
+              </div>
             </div>
             <div class="col-3 cl-be__input-p">
-              <button type="submit" class="cl-be__form-btn"><p>Отправить</p><img src="" alt=""></button>
+              <button type="submit" class="cl-be__form-btn">
+                <div>
+                  <p>Отправить</p>
+                  <img src="img/messg.svg" alt="">
+                </div>
+              </button>
             </div>
           </div>
         </form>
+        <img src="img/man.png" class="cl-be__man"></img>
       </div>
     </section>
 
@@ -1487,7 +2066,7 @@
                     <div class="cl-other__content">
                       <img src="img/info-2-3.svg" alt="">
                     </div>
-                    <p>Middle - уровень знаний после обучения</p>
+                    <p>Middle+ - уровень знаний после обучения</p>
                   </div>
                   <div class="cl-other__item">
                     <div class="cl-other__content">
@@ -1504,14 +2083,14 @@
       </div>
     </section>
 
-    <section class="cl-be cl-be-3">
+    <section class="cl-be cl-be-3" id="cl-be-3">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <p class="cl-be__title title-text">Получить программу курса на E-mail</p>
           </div>
         </div>
-        <form action="#">
+        <form action="#" class="cl-be__form">
           <div class="row">
             <div class="col-3 cl-be__input-p">
               <input type="text" placeholder="Имя">
@@ -1523,10 +2102,16 @@
               <input type="tel" placeholder="Телефон">
             </div>
             <div class="col-3 cl-be__input-p">
-              <button type="submit" class="cl-be__form-btn"><p>Отправить</p><img src="" alt=""></button>
+              <button type="submit" class="cl-be__form-btn">
+                <div>
+                  <p>Отправить</p>
+                  <img src="img/messg.svg" alt="">
+                </div>
+              </button>
             </div>
           </div>
         </form>
+        <img src="img/clean.png" class="cl-be__man"></img>
       </div>
     </section>
   </main>
@@ -1538,6 +2123,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/select.js"></script>
+  <script src="js/select2.js"></script>
   <script src="js/script.js"></script>
 
   <script>
@@ -1589,6 +2175,61 @@
       expandImg.parentElement.style.display = "block";
     }
 
+    // Модальное окно 
+    $('#exampleModal-1').on('shown.bs.modal', function () {
+      $('#exampleModal-1').trigger('focus')
+    })
+    $('#exampleModal-2').on('shown.bs.modal', function () {
+      $('#exampleModal-2').trigger('focus')
+    })
+    $('#exampleModal-3').on('shown.bs.modal', function () {
+      $('#exampleModal-3').trigger('focus')
+    })
+    $('#exampleModal-4').on('shown.bs.modal', function () {
+      $('#exampleModal-4').trigger('focus')
+    })
+    $('#exampleModal-5').on('shown.bs.modal', function () {
+      $('#exampleModal-5').trigger('focus')
+    })
+    $('#exampleModal-6').on('shown.bs.modal', function () {
+      $('#exampleModal-6').trigger('focus')
+    })
+    $('#exampleModal-7').on('shown.bs.modal', function () {
+      $('#exampleModal-7').trigger('focus')
+    })
+    $('#exampleModal-8').on('shown.bs.modal', function () {
+      $('#exampleModal-8').trigger('focus')
+    })
+    $('#exampleModal-3-1').on('shown.bs.modal', function () {
+      $('#exampleModal-3-1').trigger('focus')
+    })
+    $('#exampleModal-3-2').on('shown.bs.modal', function () {
+      $('#exampleModal-3-2').trigger('focus')
+    })
+    $('#exampleModal-3-3').on('shown.bs.modal', function () {
+      $('#exampleModal-3-3').trigger('focus')
+    })
+    $('#exampleModal-3-4').on('shown.bs.modal', function () {
+      $('#exampleModal-3-4').trigger('focus')
+    })
+    $('#exampleModal-3-5').on('shown.bs.modal', function () {
+      $('#exampleModal-3-5').trigger('focus')
+    })
+    $('#exampleModal-4-1').on('shown.bs.modal', function () {
+      $('#exampleModal-4-1').trigger('focus')
+    })
+    $('#exampleModal-4-2').on('shown.bs.modal', function () {
+      $('#exampleModal-4-2').trigger('focus')
+    })
+    $('#exampleModal-4-3').on('shown.bs.modal', function () {
+      $('#exampleModal-4-3').trigger('focus')
+    })
+    $('#exampleModal-4-4').on('shown.bs.modal', function () {
+      $('#exampleModal-4-4').trigger('focus')
+    })
+    $('#exampleModal-4-5').on('shown.bs.modal', function () {
+      $('#exampleModal-4-5').trigger('focus')
+    })
   </script>
 
   <!-- <script src="js/jquery.slim.min.js"></script>
